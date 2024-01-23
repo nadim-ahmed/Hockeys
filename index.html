@@ -32,29 +32,42 @@
   </head>
   <body class="font-manrope">
     <header class="container mx-auto">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+      <!---------------------------- Navbar Section --------------------------->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <li><a class="text-red-500 font-bold">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
+            <a class="btn btn-ghost text-4xl font-extrabold">Hockey's</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
               <li><a class="text-red-500 font-bold">Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
@@ -62,22 +75,67 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-4xl font-extrabold">Hockey's</a>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass text-xl mr-3"></i>
+            <a class="btn btn-error text-white text-lg font-bold">Get Ticket</a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-red-500 font-bold">Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
-          </ul>
+      </nav>
+      <!--------------------------- Banner Section ---------------------------->
+      <div class="relative">
+        <div class="carousel w-full mt-12 lg:h-[550px] rounded-lg">
+          <!-- Slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/Slider-1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/Slider-2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/slider-3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/slider-4.jpg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
         </div>
-        <div class="navbar-end">
-          <i class="fa-solid fa-magnifying-glass mr-6"></i>
-          <a class="btn btn-error text-white text-lg font-bold px-6 py-2"
-            >Get Ticket</a
-          >
+        <!------------------------- Slider Text Section -------------------------->
+        <div
+          class="bg-black rounded-xl lg:absolute bottom-10 right-10 p-6 lg:w-[500px]"
+        >
+          <h1 class="font-extrabold text-2xl text-white">
+            Meet all the heroes from the field
+          </h1>
+          <p class="font-medium mt-4 text-white opacity-60">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
       </div>
     </header>
